@@ -1,1 +1,3 @@
-<h1 align=center>----- Chapter 1: Values, Types, adn Operators -----</h1>
+# Chapter 1: Values, Types, and Operators
+
+
