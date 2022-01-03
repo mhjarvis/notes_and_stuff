@@ -6,9 +6,9 @@
 
 ## The "script" Tag
 
-    <script src="/path/to/script.js"></script>                  //absolute path
+    <script src="/path/to/script.js"></script>                 //absolute path
     <script src="script.js"></script>                          //relative path
     
-If the script tag is included in the header, add the '''defer''' value to the path.
+The Javascript file is run whenever it is encountered in your HTML. If the path is included in the header, add the '''defer''' value to the path. Otherwise, your Javascript will be run before the other nodes (in the HTML file) are created, causing errors.
 
     <script src="sscript.js" defer></script>
