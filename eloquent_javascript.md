@@ -59,6 +59,51 @@ JavaScript uses 'type coercion' to convert values when needed. In instances wher
     
 <h1 align=center>Program Structure</h1>
 
+## Bindings
+Bindings can be created using ```let```, ```const```, or ```var```. ```var``` is rarely used due to some confusing properties. ```const``` will point to the same value for as long as it exists.
+
+## Binding Names
+Binding names can include numbers, dollar signs ($), or underscores, but no other punctuation or special characters. They also cannot start with a number.
+
+## Syntax - if/else if/else
+A basic if, else if, else statement:
+
+    let num = Number(prompt("Pick a number"));
+    
+    if(num < 10) {
+      console.log("Small");
+    } else if(num < 100) {
+      console.log("Medium");
+    } else {
+      console.log("Large");
+    }
+
+## Sytax - While and Do Loops
+A basic while loop:
+
+    let number = 0;                 
+    while(number < 12) {
+      console.log(number);
+      number = number + 2;
+    }
+
+A basic do loop:
+
+    let yourName;
+    do {
+      yourName = prompt("Who are you?");
+    } while(!yourName);
+    
+    console.log(yourName);
+
+
+
+
+
+
+
+
+
 
 
 
