@@ -3,6 +3,9 @@
 1. https://javascript.info/
 2. https://eloquentjavascript.net
 
+## Things to Remember
+1. Always start by writing something that's correct and easy to understand. If it's too slow, you can measure afterward and improve it if necessary.
+
 <h1 align=center>Values, Types, and Operators</h1>
 
 ## The "script" Tag
@@ -127,10 +130,89 @@ A basic switch statement:
     
 <h1 align=center>Functions</h1>
 
+## Defining A Function
 
+    const square = function(x) {
+      return x * x;
+    };
+    console.log(square(12));                //144
 
+## Bindings and Scopes
+A binding defined outside of a function (or block), the scope is the whole program (global). If created within a function, they will be considered local.
 
+    let x = 10;
+    if(true) {
+      let y = 20;
+      var z = 30;
+      console.log(x + y + z);                //60
+    }
+    console.log(y);                         //error, y is not defined
+    console.log(x + z);                     //40 (visible due to 'var')
+    
+## Function Declaration (Notation)
+A shorter way to create function bindings. These are easier to write and do not require a semicolon after the function.
 
+    function square(x) {
+      return x * x;
+    }
+
+**Function declarations do no abide by the top-to-bottom flow of control.** These are moved to the top of their scope and may provide additional flexibility.
+
+## Arrow Functions
+The primary purpose of these functions was to write functions expressions in a less verbose way.
+
+    const power = (base, exponent) => {
+      let result = 1;
+      for(let count = 0; count < exponent; count++) {
+        result *= base;
+      }
+      return result;
+    };
+
+If there is only one parameter name, the parentheses can be omited. Shortened versions:
+
+    const square1 = x => x * x;
+
+## Optional Arguments
+Calling a function with multiple parameters is usually not an issue, for example:
+
+    function square(x) { return x * x; }
+    console.log(square(4, true, 'dog'));                //16
+    
+The additional arguments are simply ignored. In the case where you supply too few arguments to a function, the missing arguments get assigned the value of ```undefined```. It is possible to assign default values to functions as well.
+
+    function power(base, exponent = 2) {
+      let result = 1;
+      for (let count = 0; count < exponent; count ++) {
+        result *= base;
+      }
+      return result;
+    }
+    console.log(power(4));              //16
+    console.log(power(2, 6));           //64
+
+## Closure
+
+    function multiplier(factor) {
+      return number => number * factor;
+    }
+    
+    let twice = multiplier(2);
+    console.log(twice(5));              //10
+    
+## Recursion
+Recursion is usually more inefficient than looping, however, some problems are easier to solve with recursion. These usually require exploring or processing several 'branches', each of which might branch out again into even more bran
+
+    function power(base, exponent) {
+      if(exponent == 0) {
+        return 1;
+      } else {
+        return base * power(base, exponent - 1);
+      }
+    }
+    
+    console.log(power(2, 3));               //8
+    
 
 
 
