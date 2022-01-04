@@ -1,6 +1,7 @@
 <h1 align=center>Links</h1>
 
 1. https://javascript.info/
+2. https://eloquentjavascript.net
 
 <h1 align=center>Values, Types, and Operators</h1>
 
@@ -65,7 +66,7 @@ Bindings can be created using ```let```, ```const```, or ```var```. ```var``` is
 ## Binding Names
 Binding names can include numbers, dollar signs ($), or underscores, but no other punctuation or special characters. They also cannot start with a number.
 
-## Syntax - if/else if/else
+## Syntax - If, Else If, Else
 A basic if, else if, else statement:
 
     let num = Number(prompt("Pick a number"));
@@ -78,7 +79,7 @@ A basic if, else if, else statement:
       console.log("Large");
     }
 
-## Sytax - While and Do Loops
+## Syntax - While and Do Loops
 A basic while loop:
 
     let number = 0;                 
@@ -96,7 +97,35 @@ A basic do loop:
     
     console.log(yourName);
 
+## Syntax - For Loop
+A basic for loop:
 
+    for(let number = 0; number < 12; number++) {
+      console.log(number);
+    }
+    
+## Breaking Out Of A Loop
+The special statement ```break``` immediately jumps out of the enclosing loop. The ```continue``` keyword causes control to jump out of the body and moves on to the loops next iteration.
+
+## Syntax = Switch
+A basic switch statement:
+
+    switch(prompt("What is the weather like?")) {
+      case "rainy":
+        console.log("Remember to bring an umbrella.");
+        break;
+      case "sunny":
+        console.log("Dress lightly.");
+        break;
+      case "cloudy":
+        console.log("Go outside.");
+        break;
+      default:
+        console.log("Unknown weather type!");
+        break;
+    }
+    
+<h1 align=center>Functions</h1>
 
 
 
