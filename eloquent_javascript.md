@@ -215,6 +215,35 @@ Recursion is usually more inefficient than looping, however, some problems are e
     
 <h1 align=center>Data Structures: Objects and Arrays</h1>
 
+## Data Sets
+Basic creation and access of arrays:
+
+    let listOfNumbers = [1, 2, 3];
+    console.log(listOfNumbers[2];           //2
+    console.log(listOfNumbers.length);      //3 (can also use listOfNumbers["length"];
+    
+## Methods
+The '''push''' and '''pop''' methods allow us to add and subtract elements from an array.
+
+    let sequence = [1, 2, 3];
+    sequence.push(4);                   //[1, 2, 3, 4];
+    sequence.pop();                     //4 (new array is [1, 2, 3])
+    
+## Objects
+Basic object construction and access.
+
+    let day1 = {
+      squirrel: false;,                 //properties seperated by commas
+      events: ["work", "eat", "sleep"]
+    };
+    console.log(day1.squirrel);         //false
+    console.log(day1.wolf);             //undefined
+
+The binary '''in''' operator, when applied to a string and an objects, tells whether that object has a property with that name.
+
+    console.log("dog" in day1);         //false
+
+
 
 
 
