@@ -100,5 +100,12 @@ A drop-down menu can be created using '''select'''
       <option value="yellow">Yellow</option>
     </select>
 
-
+## Textarea
+Textarea creates a more free-form text field for the user.
+      
+      <label for="learn">What are you doing?<.laabel>
         
+      <textarea id="learn" name="learn" rows="5" cols="30">
+        I hope to learn about...
+      </textarea>
+
