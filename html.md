@@ -3,6 +3,18 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
 https://htmlreference.io/
 
+<h1 align=center>HTML Setup</h1>
+
+    <!DOCTYPE html>                             //document type declaration
+      <html>
+        <head>                              //metadata - information about the page itself
+          <title></title>                 //title that will display in the browser tab
+        </head>
+        <body>
+        </body>
+      </html>                           
+    
+
 <h1 align=center>Text Elements</h1>
 
 ## Block Elements
@@ -30,15 +42,15 @@ Inline elements differentiate part of a text, giving a particular function. Thes
 
 #### Paragraph with Line Breaks
     <p>
-        />                 //line breaks
-        />
+      />                 //line breaks
+      />
     <p>
 
 #### Description List
     
     <dl>                            //description list element
-        <dt>Term</dt>               //specify the term
-        <dd>Definition<dd>          //definition of the term
+      <dt>Term</dt>               //specify the term
+      <dd>Definition<dd>          //definition of the term
     </dl>
     
 ## Attributes
@@ -47,41 +59,46 @@ Attributes are part of all HTML elements. They usually come in name/value pairs 
 #### Images
 
     <img
-        src="images/dog.jpg"                //URL or file location of the image
-        alt="dog jumping"                   //alternative text for when the image is unable to display
-        width="200"                         //width
-        height="100"                        //height
+      src="images/dog.jpg"                //URL or file location of the image
+      alt="dog jumping"                   //alternative text for when the image is unable to display
+      width="200"                         //width
+      height="100"                        //height
     />                                      //self-closing tag
     
 #### Links
 Inline elements written in the '''<a>''' tag. The destination of the link is set with the '''href''' attribute (hypertext-reference). Destinations include anchor targets (for navigating within the page), relative URLs (navigate within the same website), and absolute URLs (navigatae to another website).
 
     <a href="google.com"                //basic setup
-       rel="noopener"                   //specify relationship between current/linked document
-       target="_blank"                  //specify where to open the link (in this case, new window)
-       >Google</a>
+      rel="noopener"                   //specify relationship between current/linked document
+      target="_blank"                  //specify where to open the link (in this case, new window)
+      >Google</a>
 
     
+## Semantic Elements
     
+    <header>            //the first elemnt of a page (can include the logo and tagline)
+    <nav>               //list of links that go to different pages on a website
+    <article>           //main content of the page
+    <footer>            //the last element of the page
+   
+## Forms
+
+    <form>
+      <input type="text" />                   //input formats
+      <input type="checkbox" />
+      <input type="radio" />
+    </form>
+        
+A drop-down menu can be created using '''select'''
+
+    <label for="color-select">Choose a color:<label>
     
-    
-    
-    
-    
-    
+    <select id="color-select">
+      <option value="">--Please choose an option--</option>
+      <option value="blue">Blue</option>
+      <option value="green"><Green</option>
+      <option value="yellow">Yellow</option>
+    </select>
 
 
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
+        
