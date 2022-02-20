@@ -6,6 +6,7 @@
 2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 3. https://learncssgrid.com/
 4. https://codingfantasy.com/games/css-grid-attack/play
+5. https://cssgridgarden.com/
 
 ## Enable Grid
 To create a grid container you can use either ```display: grid``` or ```display: inline-grid```. All direct <em>children</em> of that element become <em>grid items</em>.
@@ -43,5 +44,48 @@ The ```column-gap``` property sets the size of the gap between grid columns whil
         grid-template-rows: repeat(3, 100px);
         column-gap: 10px;
         row-gap: 5%;
+    }
+
+The ```gap: <row-gap> / <column-gap>``` property is a shorthand version of ```coulumn-gap``` and ```row-gap```. 
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px 10px;                                 //<row-gap> <column-gap>
+    }
+
+### Grid Start/End
+The ```grid-column-start``` property specifies a grid item's start position within the grid column. The ```grid-column-end``` property specifies a grid item's end position within the grid column. The same principle applies tow rows with ```grid-row-start``` and ```grid-row-end```.
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6
+        , 1fr);
+        grid-template-rows: repeat(6, 2fr);
+        gap: 10px;
+    }
+
+    #item {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    #item2 {
+        grid-row-start: 3;
+        grid-row-start: 5
+    }
+    
+Both properties can be combined using ```span <number>``` on the ```grid-column-start``` element. Note that, theh starting position is not defined, only how many columns the element spans is defined.
+
+    #item {
+        grid-column-start: span 2;                  //span two grid columns
+    }
+
+Shorthand versions of these properties come as ```grid-column``` and ```grid-row```. ```span``` can also be used within these properties.
+
+    #item {
+        grid-column: 1 / 4;
+        grid-row: 1 / span 2;
     }
 
