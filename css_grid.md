@@ -60,13 +60,22 @@ Both the ```auto-fit``` and ```auto-fill``` keywords tell the browser to handle 
 ```auto-fill``` <strong><em>FILLS</em></strong> the row with as many columns as it can fit. ```auto-fit``` <strong><em>FITS</em></strong> the <strong><em>CURRENTLY AVAILABLE</em></strong> columns into the space by expanding them so that they take up any available space. 
 
 #### Grid-Template Shorthand
+Syntax for ```grid-template``` is ```grid-template: <rows> / <columns>``` when just using columns/rows. To add areas use ```grid-template: <areas> <rows> / <columns>```.
 
+    .container {
+        display: grid;
+        grid-template: 100px 150px / repeat(3, 1fr);                //row1 row2 / columns 1-3
+    }
 
+    .container {
+        display: grid;
+        grid-template: "a a b" 50px                                 //area row
+                       "a a b" 100px / 1fr 2fr 1fr;                 //area row / columns
+    }
 
-
-
-
-
+    #item1 {
+        grid-area: a;
+    }
 
 ### Grid Gaps
 The ```column-gap``` property sets the size of the gap between grid columns while the ```row-gap``` property sesets the size of the gap between grid rows.
@@ -176,7 +185,50 @@ Another example:
         grid-area: 1 / 1 / 5 / 3;
     }
 
+### Grid-Auto-Flow
+The ```grid-auto-flow``` property controls how the auto-placement algorithm works, specifying exactly how auto-placed items get flowed into the grid. 
 
+    grid-auto-flow: row;                //tells the auto-placement algo to fill in each row in turn, adding
+                                        //rows as necessary (default)
+    grid-auto-flow: column;             //tells the auto-placement algo to fill in each column in turn,
+                                        //adding new columns as necessary
+    grid-auto-flow: dense;              //tells the auto-placement algorithm to attempt to fill in holes
+                                        //earlier in the grid if smaller items come up later
+
+### Grid-Auto-Rows and Grid-Auto-Columns
+The ```grid-auto-rows``` and ```grid-auto-columns``` properties give control over the size of implicit tracks (those items placed outside the explicit grid or when items overflow the defined cells). They accept the same values as when using ```grid-template``` except for the ```repeat()``` function.
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        grid-auto-columns: 200px;                       //items will have a 200px width if overflow
+        grid-auto-rows: 150px;                          //items will have 150px height if overflow
+    }
+
+When an item is not explicitly sized with ```grid-template``` but contains the ```grid-auto``` template, implicit grid tracks are created to hold it.
+
+### Justify-Items, Align-Items and Place-Items
+```justify-items``` aligns items along the inline (row) axis while ```align-items``` aligns items along the bblock (column) axis. ```place-items``` gives the ability to set both in the form of ```place-items: <align-items> <justify-items>```. Values include:
+
+    justify-items: start;               //align items to be flush with the start edge of their cell
+    justify-items: end;                 //aligns items to be flush with the end edge of their cell
+    justify-items: center;              //aligns items in the center of their cell
+    justify-items: stretch;             //fills the whole width of the cell (default)
+    align-items: start;                 //aligns items to be flush with the start edge of their cell
+    align-items: end;                   //aligns items to be flush with the end edge of their cell
+    align-items: center;                //aligns items in the center of their cell
+    align-items: stretch;               //fills the whole height of the cell (default)
+
+### Justify-Self and Align-Self
+The ```justify-self``` and ```align-self``` properties have the same properties as justify-items and align-items but their values apply to the content inside a single grid item. The ```place-self``` property can combine both.
+
+    : start;                //aligns items to be flush with the start edge of their cell
+    : end;                  //aligns items to be flush with the end edge of their cell
+    : center;               //aligns items in the center of their cell
+    : stretch;              //fills the whole width of the cell (default)
+
+### Justify-Content
 
 <h1 align=center>---Quick Reference---</h1>
 
@@ -194,9 +246,9 @@ Another example:
         : repeat(auto-fill, 100px);     //fills the row with as many columns as it can
         : repeat(auto-fit, 100px);      //fits the current columns into the space by expanding
                                         //them to take up any available space
+
     grid-remplate:                  <rows> / <columms> or <areas> <rows> / <columns>
 
-        : max-content;                  //intrinsic maximum width of content
 
 ##### Gaps
     column-gap:                      %, px, fr, em;
