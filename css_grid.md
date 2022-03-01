@@ -228,7 +228,28 @@ The ```justify-self``` and ```align-self``` properties have the same properties 
     : center;               //aligns items in the center of their cell
     : stretch;              //fills the whole width of the cell (default)
 
-### Justify-Content
+### Justify-Content 
+These properties allow for setting the alignment of the grid within the grid container. ```justify-content``` aligns the grid along the inline (row) axis. The ```align-content``` property aligns the grid along the block (columns) axies. The following values apply to both properties:
+
+    : start;            //aligns the grid to be flush with the start edge of the grid container
+    : end;              //aligns the grid to the flush with the end edge of the grid container
+    : center;           //aligns the grid in the center of the grid container
+    : stretch;          //resizes the grid items to allow the grid to fill the full width
+    : space-around;     //places an even amount of space between each grid item with
+                        //half-sized spaces on the far ends
+    : space-between;    //places an even amount of space between each grid item, no space at far ends
+    : space-evenly;     //places an even amount of space between each grid item, including far ends
+
+
+
+
+
+
+
+
+
+
+
 
 <h1 align=center>---Quick Reference---</h1>
 
