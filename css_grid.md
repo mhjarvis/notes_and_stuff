@@ -7,6 +7,8 @@
 3. https://learncssgrid.com/
 4. https://codingfantasy.com/games/css-grid-attack/play
 5. https://cssgridgarden.com/
+6. https://rachelandrew.co.uk/archives/2015/02/04/css-grid-layout-creating-complex-grids/
+7. https://gridbyexample.com/examples/ 
 
 ## Enable Grid
 To create a grid container you can use either ```display: grid``` or ```display: inline-grid```. All direct <em>children</em> of that element become <em>grid items</em>.
