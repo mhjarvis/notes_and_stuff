@@ -16,3 +16,4 @@ The ```branch``` command can be used to create a new branch, list all branches i
 
     git switch -c my-first-branch
 
+** Every time you switch branches, Git rewrites your working directory to look like it did when you made the most recent commit on the branch you just switched to. Thus, refresh your editor or reopen the project after switching branches.
