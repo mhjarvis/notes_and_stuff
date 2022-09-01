@@ -70,3 +70,10 @@ To visualize your commit history, Git provides the ```log``` command. It provide
 
     git log --oneline                           // shortened version of above
     
+To see all commits throught the repository we can use the ```--all``` flag:
+
+    git log --all                                                  // display all commits
+    git log --all --graph                                          // display all commits as a graph
+    git log --all --graph --pretty=oneline --abbrev-commit         // clean/abbreviated version
+
+<h1 align=center>Git Diff</h1>
