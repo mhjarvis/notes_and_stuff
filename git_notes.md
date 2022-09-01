@@ -47,5 +47,9 @@ Merge conflicts can occur if, after branching, commits or changes are made (for 
 
 You are able to delete branches from git. Make sure you are not on the branch you are attempting to delete and use the ```-d``` or the ```--delete``` flag:
 
-    git branch -d secondary_branch
+    git branch -d secondary_branch          // deletes the 'secondary_branch'
 
+In the event that you delete a branch you don't mean to, you can undo so by:
+
+    git branch -v                           // verbous shows the reference code (e.g. 68b3a70)
+    git branch secondary_branch 68b3a70     // restores this delted branch
