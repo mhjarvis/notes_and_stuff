@@ -58,3 +58,15 @@ If you want to delete a branch that is not merged, you will get a warning and wi
 
     git branch -D secondary_branch          // force delete
 
+<h1 align=center>Git Log</h1>
+
+To visualize your commit history, Git provides the ```log``` command. It provides the user with the metadata stored during individual commits.
+
+    git log                                     // lists all commits in the current branch, in descending order
+
+    git log --abbrev-commit                     // truncate the commit ID to the identifying part
+    git log --pretty=oneline                    // remove author/date to oneline
+    git log --pretty=oneline abbrev-commit      // combine args
+
+    git log --oneline                           // shortened version of above
+    
