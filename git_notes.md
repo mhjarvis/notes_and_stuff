@@ -36,4 +36,10 @@ The ```git merge``` command allows you to combine the work done in different bra
     git branch -v                   // both branches will have the same commit ID
                                     // they point to the same branch
 
+Merge conflicts can occur if, after branching, commits or changes are made (for example) to the master (main) branch and the branching branch. When these are merged, they are attempting to merge to the same file and git is uncertain which of the changes to keep. This results in four choices one could make:
+
+1. Pick the changes introduced in the ```master``` branch;
+2. Pick the changes in the new branch;
+3. Pick both of the changes;
+4. Ignore both and write something new altogether;
 
