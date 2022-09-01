@@ -53,3 +53,8 @@ In the event that you delete a branch you don't mean to, you can undo so by:
 
     git branch -v                           // verbous shows the reference code (e.g. 68b3a70)
     git branch secondary_branch 68b3a70     // restores this delted branch
+
+If you want to delete a branch that is not merged, you will get a warning and will need to force delete the branch:
+
+    git branch -D secondary_branch          // force delete
+
