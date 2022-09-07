@@ -85,3 +85,15 @@ The prefix of '-' in output refers to the old file while a prefix of + refers to
     git diff <filename>                     // basic command
     git diff --word-diff <filename>         //shows how individual words differ rather than how lines differ
 
+```git diff``` compares what is currently in the 'working directory' and the 'index'. Once a file is added to the index, these two will be the same, and the only difference will lie in the 'index' and 'object database' (which will be identical once you commit).
+
+If you want to compare items after adding them to the repository, you can still do so using the ```--chached``` flag. Here we are comparing the previously commited version with the index.
+
+    git diff --cached <filename>            // show the difference between staged file
+    git diff --staged <filename>            // does the same thing as --chached
+
+The ```git diff``` command can also be used to compare two different branches. The lastest commits (the tips of the branch) on each branch are then compared.
+
+    git diff branch-a branch-b
+
+<h1 align=center>Undoing with Git Restore</h1>
