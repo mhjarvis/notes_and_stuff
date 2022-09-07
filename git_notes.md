@@ -80,5 +80,8 @@ To see all commits throught the repository we can use the ```--all``` flag:
 
 The command ```git diff``` can be used to find the difference between all kinds of things in Git. When files are compared, they will be compared a => b, where file 'a' is the old file (the file in the index), and where 'b' is the new file (in the working directory).
 
-The prefix of '---' in output refers to the old file while a prefix of +++ refers to the new file.
+The prefix of '-' in output refers to the old file while a prefix of + refers to the new file.
+
+    git diff <filename>                     // basic command
+    git diff --word-diff <filename>         //shows how individual words differ rather than how lines differ
 
