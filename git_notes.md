@@ -77,3 +77,8 @@ To see all commits throught the repository we can use the ```--all``` flag:
     git log --all --graph --pretty=oneline --abbrev-commit         // clean/abbreviated version
 
 <h1 align=center>Git Diff</h1>
+
+The command ```git diff``` can be used to find the difference between all kinds of things in Git. When files are compared, they will be compared a => b, where file 'a' is the old file (the file in the index), and where 'b' is the new file (in the working directory).
+
+The prefix of '---' in output refers to the old file while a prefix of +++ refers to the new file.
+
