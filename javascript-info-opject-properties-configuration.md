@@ -14,8 +14,8 @@ During object creation, all of these values are ```true```. The syntax is ```Obj
     let desc = Object.getOwnPropertyescriptor(user, 'name');
 
     console.log(desc);     
-
-**The above will print the following:  **
+    
+The above will print the following:
     
         {value: 'Markus', writable: true, enumerable: true, configurable: true}
             configurable: true
