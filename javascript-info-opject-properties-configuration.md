@@ -107,9 +107,17 @@ Prints:
 
     {value: 'Scott', writable: false, enumerable: true, configurable: true} 
 
+### ```Object.getOwnPropertyDescriptors```
+The ```Object.getOwnPropertyDescriptors``` allows us to get all property descriptors at once.
 
+console.log(Object.getOwnPropertyDescriptors(user))
 
+Prints: 
 
+    {name: {…}, surname: {…}}
+    name: {value: 'Scott', writable: false, enumerable: true, configurable: true}
+    surname: {value: 'Smith', writable: false, enumerable: false, configurable: false}
+    [[Prototype]]: Object
 
 
 <h1 align=center>PROPERTY GETTERS AND SETTERS</h1>
