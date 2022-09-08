@@ -62,6 +62,33 @@ We can set ```enumerable:false``` to prevent this functionality:
 Non-enumerable properties are also excluded from ```Object.keys```.
 
 ### Non-configurable
+A non-configurable property cannot be deleted, nor its attributes modified. Some pre-defined objects already meet this. 
+
+    console.log(Object.getOwnPropertyDescriptor(Math, 'PI'))
+
+Prints out:
+
+    {value: 3.141592653589793, writable: false, enumerable: false, configurable: false}
+
+You are also unable to change this value to make it writable again.
+
+    Object.defineProperty(Math, 'PI', { writable: true })       // Error, no change
+
+Thus, when making a property non-configurable, there is no changing it back. It prevents changes of property flags and its deletion, while allowing one to change its value. Thus, we can make a property 'forever sealed' by doing the following:
+
+    let user = { 
+        name: 'Markus',
+    };
+
+    Object.defineProperty(user, 'name', {
+        writable: false,
+        configurable: false
+    })
+
+    user.name = 'Scott';                                        // does not work
+    delete user.name;                                           // does not work
+    Object.defineProperty(user, 'name', { value: 'Scott' })     // does not work
+
 
 
 
