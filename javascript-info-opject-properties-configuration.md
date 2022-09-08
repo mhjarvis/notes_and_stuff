@@ -1,8 +1,6 @@
-<h1 align=center> 
+<h1 align=center>PROPERTY FLAGS AND DESCRIPTORS</h1>
 
-**PROPERTY FLAGS AND DESCRIPTORS** </h1>
-
-**Objects** can do much more than store properties in the simple 'key: value' pair. 
+Objects can do much more than store properties in the simple 'key: value' pair. 
 
 ## Property Flags
 Object properties, besidees a value, have three special attributes ("flags"):
