@@ -28,7 +28,7 @@ Flags can be changed with ```Object.defineProperty(obj, propertyName, descriptor
 
     Object.defineProperty(user, 'name', { value: 'Scott' });        // changes 'name' variable
 
-### ```writable``` flag
+## ```writable``` flag
 Changing the non-writable property to false prevents changing values, unless they apply their own ```defineProperty``` to overide it.
 
     let user = { name: "Markus" };
@@ -40,7 +40,7 @@ Will print the following:
 
     user.name = "Scott";         // will not change user.name (will show error only in 'strict' mode)
 
-### ```enumerable``` flag
+## ```enumerable``` flag
 Normally, a built-in ```toString``` for objectsis non-enumerable. It will not show up in a ```for...in``` loop, unless we add one of our own.
 
     let user = { 
@@ -61,7 +61,7 @@ We can set ```enumerable:false``` to prevent this functionality:
 
 Non-enumerable properties are also excluded from ```Object.keys```.
 
-### ```configurable``` flag
+## ```configurable``` flag
 A non-configurable property cannot be deleted, nor its attributes modified. Some pre-defined objects already meet this. 
 
     console.log(Object.getOwnPropertyDescriptor(Math, 'PI'))
@@ -89,7 +89,7 @@ Thus, when making a property non-configurable, there is no changing it back. It 
     delete user.name;                                           // does not work
     Object.defineProperty(user, 'name', { value: 'Scott' })     // does not work
 
-### ```Object.defineProperties(obj, descriptors)```
+## ```Object.defineProperties(obj, descriptors)```
 Using ```Object.defineProperties(obj, descriptors)``` allows us to define many properties at once.
 
     let user = { 
@@ -107,7 +107,7 @@ Prints:
 
     {value: 'Scott', writable: false, enumerable: true, configurable: true} 
 
-### ```Object.getOwnPropertyDescriptors```
+## ```Object.getOwnPropertyDescriptors```
 The ```Object.getOwnPropertyDescriptors``` allows us to get all property descriptors at once.
 
 console.log(Object.getOwnPropertyDescriptors(user))
