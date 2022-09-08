@@ -23,3 +23,9 @@ During object creation, all of these values are ```true```. The syntax is ```Obj
 Flags can be changed with ```Object.defineProperty(obj, propertyName, descriptor)``` where the descriptor is the property descriptor object to apply. 
 
 ### Non-writable
+Changing the non-writable property to false prevents changing values, unless they apply their own ```defineProperty``` to overide it.
+
+    let user = { name: "John" };
+    Object.defineProperty(user, "name", { writable: false });
+
+    user.name = "Pete";                 // Error: Cannot assign to read only property 'name'
