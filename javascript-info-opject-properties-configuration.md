@@ -29,3 +29,8 @@ Changing the non-writable property to false prevents changing values, unless the
     Object.defineProperty(user, "name", { writable: false });
 
     user.name = "Pete";                 // Error: Cannot assign to read only property 'name'
+
+### Non-enumerable
+
+
+<h1 align=center>PROPERTY GETTERS AND SETTERS</h1>
