@@ -2,7 +2,7 @@
 
 Objects can do much more than store properties via the ```key: value``` pair. 
 
-## Property Flags
+# Property Flags
 Object properties, besides a value, have three special attributes ("flags"):
 - writable - if ```true```, the value can be changed.
 - enumerable - if ```true```, it will be listed in loops.
@@ -28,7 +28,7 @@ Flags can be changed with ```Object.defineProperty(obj, propertyName, descriptor
 
     Object.defineProperty(user, 'name', { value: 'Scott' });        // changes 'name' variable
 
-### Non-writable
+### ```writable``` flag
 Changing the non-writable property to false prevents changing values, unless they apply their own ```defineProperty``` to overide it.
 
     let user = { name: "Markus" };
@@ -40,7 +40,7 @@ Will print the following:
 
     user.name = "Scott";         // will not change user.name (will show error only in 'strict' mode)
 
-### Non-enumerable
+### ```enumerable``` flag
 Normally, a built-in ```toString``` for objectsis non-enumerable. It will not show up in a ```for...in``` loop, unless we add one of our own.
 
     let user = { 
@@ -61,7 +61,7 @@ We can set ```enumerable:false``` to prevent this functionality:
 
 Non-enumerable properties are also excluded from ```Object.keys```.
 
-### **Non-configurable**
+### ```configurable``` flag
 A non-configurable property cannot be deleted, nor its attributes modified. Some pre-defined objects already meet this. 
 
     console.log(Object.getOwnPropertyDescriptor(Math, 'PI'))
