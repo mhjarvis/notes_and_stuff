@@ -1,4 +1,4 @@
-# PROPERTY FLAGS AND DESCRIPTORS
+<h1 align=center>PROPERTY FLAGS AND DESCRIPTORS</h1>
 
 Objects can do much more than store properties via the ```key: value``` pair. 
 
@@ -38,9 +38,38 @@ Will print the following:
 
     {value: 'Markus', writable: false, enumerable: true, configurable: true}
 
-    user.name = "Scott";         // will not change user.name (may show error)
+    user.name = "Scott";         // will not change user.name (will show error only in 'strict' mode)
 
 ### Non-enumerable
+Normally, a built-in ```toString``` for objectsis non-enumerable. It will not show up in a ```for...in``` loop, unless we add one of our own.
+
+    let user = { 
+        name: 'Markus',
+        toString() {
+            return this.name;
+        }
+    };
+
+    for(let key in user) console.log(key);          // name
+                                                    // toString
+
+We can set ```enumerable:false``` to prevent this functionality:
+
+    Object.defineProperty(user, 'toString', { enumerable: false });
+    
+    for(let key in user) console.log(key);         // name
+
+Non-enumerable properties are also excluded from ```Object.keys```.
+
+### Non-configurable
+
+
+
+
+
+
+
+
 
 
 <h1 align=center>PROPERTY GETTERS AND SETTERS</h1>
