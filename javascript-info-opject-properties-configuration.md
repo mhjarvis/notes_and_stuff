@@ -12,7 +12,7 @@ Object properties, besidees a value, have three special attributes ("flags"):
 - enumerable - if ```true```, it will be listed in loops.
 - configurable - if ```true```, the property can be deletd and these attributes can be modified.
 
-During object creation, all of **these** values are ```true```. The syntax is ```Object.getOwnPropertyDescriptor(obj, prop);``` where ```obj``` is the object in which to look for the property and ```prop``` is the name or symbol of the property whose description is to be retrieved.
+During object creation, all of *these* values are ```true```. The syntax is ```Object.getOwnPropertyDescriptor(obj, prop);``` where ```obj``` is the object in which to look for the property and ```prop``` is the name or symbol of the property whose description is to be retrieved.
 
     let user = { name: "Markus" };
     let desc = Object.getOwnPropertyescriptor(user, 'name');
