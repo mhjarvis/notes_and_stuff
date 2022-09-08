@@ -1,4 +1,4 @@
-<h1 align=center>PROPERTY FLAGS AND DESCRIPTORS</h1>
+# **PROPERTY FLAGS AND DESCRIPTORS**
 
 Objects can do much more than store properties in the simple 'key: value' pair. 
 
