@@ -1,4 +1,4 @@
-# A. __PROPERTY FLAGS AND DESCRIPTORS__
+# ====== PROPERTY FLAGS AND DESCRIPTORS ======
 
 Objects can do much more than store properties in the simple 'key: value' pair. 
 
