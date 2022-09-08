@@ -61,7 +61,7 @@ We can set ```enumerable:false``` to prevent this functionality:
 
 Non-enumerable properties are also excluded from ```Object.keys```.
 
-### Non-configurable
+### **Non-configurable**
 A non-configurable property cannot be deleted, nor its attributes modified. Some pre-defined objects already meet this. 
 
     console.log(Object.getOwnPropertyDescriptor(Math, 'PI'))
@@ -115,9 +115,8 @@ console.log(Object.getOwnPropertyDescriptors(user))
 Prints: 
 
     {name: {…}, surname: {…}}
-    name: {value: 'Scott', writable: false, enumerable: true, configurable: true}
-    surname: {value: 'Smith', writable: false, enumerable: false, configurable: false}
-    [[Prototype]]: Object
-
+        name: {value: 'Scott', writable: false, enumerable: true, configurable: true}
+        surname: {value: 'Smith', writable: false, enumerable: false, configurable: false}
+        [[Prototype]]: Object
 
 <h1 align=center>PROPERTY GETTERS AND SETTERS</h1>
