@@ -89,10 +89,23 @@ Thus, when making a property non-configurable, there is no changing it back. It 
     delete user.name;                                           // does not work
     Object.defineProperty(user, 'name', { value: 'Scott' })     // does not work
 
+### ```Object.defineProperties(obj, descriptors)```
+Using ```Object.defineProperties(obj, descriptors)``` allows us to define many properties at once.
 
+    let user = { 
+        name: 'Markus',
+    };
 
+    Object.defineProperties(user, {
+        name: { value: 'Scott', writable: false },
+        surname: { value: 'Smith', writable: false }
+    })
 
+    console.log(Object.getOwnPropertyDescriptor(user, 'name'))
 
+Prints: 
+
+    {value: 'Scott', writable: false, enumerable: true, configurable: true} 
 
 
 
