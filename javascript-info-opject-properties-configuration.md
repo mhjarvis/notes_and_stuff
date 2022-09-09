@@ -120,3 +120,40 @@ Prints:
         [[Prototype]]: Object
 
 <h1 align=center>PROPERTY GETTERS AND SETTERS</h1>
+
+Objects have two kinds of properties: data properties and accessor properties. These accessor properties are functions that execute upon getting/setting a value.
+
+## Getters and Setters
+Getter and setter properties are represented by methods: ```get``` and ```set```.
+
+    let obj = {
+        get propName() {
+            // getter - code executed on getting obj.propName (read)
+        }
+        s
+        set propName() {
+            // setter - code executed on setting obj.propName = value (asigned)
+        }
+    }
+
+We can use a getter and setter as follows:
+
+    let person = {
+        name: "Markus",
+        lastName: "Smith",
+
+        get fullName() {
+            return `${this.name} ${this.lastName}`;
+        }
+        set fullName() {
+            [this.name, this.lastName] = value.split(" ");
+        }
+    }
+
+    console.log(person.fullName);               // Markus Smith
+    user.fullName = "Alice Cooper"              // uses setter to set the fullName variable
+
+
+The ```get``` property 'reads' the name from the Object, hence, we are unable to assign a value to the ```fullName``` property without the setter value present. 
+
+## Accessor descriptors
