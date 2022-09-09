@@ -225,3 +225,6 @@ One way of using getters/setters is when when end up changing or adding to objec
 
     alert( john.birthday ); // birthday is available
     alert( john.age );      // ...as well as the age
+
+## Why use getters/setters?
+1. https://stackoverflow.com/questions/42342623/why-use-getters-and-setters-in-javascript
