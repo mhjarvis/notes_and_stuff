@@ -182,3 +182,25 @@ Accessor descriptors have no ```value``` or ```writable``` descriptors, but have
     console.log(user.fullName);                 // John Smith
 
     for(let key in user) console.log(key);      // name, surname
+
+## Smart getters/setters
+Getters/setters can also be used as wrappers of values, for example:
+
+    let user = {
+        get name() {
+            return this._name;
+        },
+
+        set name(value) {
+            if (value.length < 4) {
+                alert("Name is too short, need at least 4 characters");
+                return;
+            }
+            this._name = value;
+        }
+    };
+
+    user.name = "Pete";
+    alert(user.name); // Pete
+
+    user.name = ""; // Name is too short...
