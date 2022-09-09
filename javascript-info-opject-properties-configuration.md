@@ -204,3 +204,24 @@ Getters/setters can also be used as wrappers of values, for example:
     alert(user.name); // Pete
 
     user.name = ""; // Name is too short...
+
+## Using getters/setters
+One way of using getters/setters is when when end up changing or adding to objects. For example, taking the ```age``` variable and keeping it usable (since we have old code using it) after we add the new ```birthday``` variable:
+
+    function User(name, birthday) {
+        this.name = name;
+        this.birthday = birthday;
+
+        // age is calculated from the current date and birthday
+        Object.defineProperty(this, "age", {
+            get() {
+                let todayYear = new Date().getFullYear();
+                return todayYear - this.birthday.getFullYear();
+            }
+        });
+    }
+
+    let john = new User("John", new Date(1992, 6, 1));
+
+    alert( john.birthday ); // birthday is available
+    alert( john.age );      // ...as well as the age
