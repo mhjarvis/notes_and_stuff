@@ -157,3 +157,28 @@ We can use a getter and setter as follows:
 The ```get``` property 'reads' the name from the Object, hence, we are unable to assign a value to the ```fullName``` property without the setter value present. 
 
 ## Accessor descriptors
+Accessor descriptors have no ```value``` or ```writable``` descriptors, but have the following:
+- ```get``` - a function with no args, works when property is read.
+- ```set``` - a function with one arg, called when the property is set.
+- ```enumerable``` - same as for data properties.
+- ```configurable``` - same as for data properties.
+
+
+    let user = {
+        name: "John",
+        surname: "Smith"
+    };
+
+    Object.defineProperty(user, 'fullName', {
+        get() {
+            return `${this.name} ${this.surname}`;
+        },
+
+        set(value) {
+            [this.name, this.surname] = value.split(" ");
+        }
+    });
+
+    console.log(user.fullName);                 // John Smith
+
+    for(let key in user) console.log(key);      // name, surname
