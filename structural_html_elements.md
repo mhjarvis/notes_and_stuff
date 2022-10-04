@@ -22,3 +22,7 @@
 ## ```<address></address>```
 - not included in ```section``` elements, but is used to provide contact information for either the document or a specific article
 - intended for providing contact information (e.g. email, url, phone number, address, etc.)
+
+###  ```<header></header> && <footer></footer>```
+- header and footer should be included in their respective positions
+
