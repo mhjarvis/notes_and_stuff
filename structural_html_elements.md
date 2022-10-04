@@ -20,3 +20,5 @@
 - if the content is primarily links, put it in a nav element
 
 ## ```<address></address>```
+- not included in ```section``` elements, but is used to provide contact information for either the document or a specific article
+- intended for providing contact information (e.g. email, url, phone number, address, etc.)
