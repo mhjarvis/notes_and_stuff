@@ -83,7 +83,7 @@ An example of using symantic elements:
 
 Sectioning roots are HTML elements which have their own outline that does not contribute to the outline of the rest of the document (for example, the ```body``` element). 
 
-## <blockquote></blockquote>
+## ```<blockquote></blockquote>```
 - used when you need to include a long quotation in a document
 - includes quotation, header text, paragraphs, and embedded content
 - includes ```cite``` element, which is not displayed (normally)
@@ -93,7 +93,7 @@ Sectioning roots are HTML elements which have their own outline that does not co
         <p>This is a quotation</p>
     </blockquote>
 
-## <pre><details></details></pre>
+## ```<details></details>```
 - allows you to create collapsible sections of content
 - can include ```summary``` element which contains content that is displayed when collapsed
 - without a ```summary``` will display 'Details'
@@ -105,7 +105,7 @@ Sectioning roots are HTML elements which have their own outline that does not co
         <p>These are collapsable details</p>
     </details>
 
-## <figure></figure>
+## ```<figure></figure>```
 - used to group content that is self-contained and can be logically moved to a different location
 - allows the use of a caption within the content
 - can be used to group text (code listing) along with a caption
@@ -121,19 +121,19 @@ Sectioning roots are HTML elements which have their own outline that does not co
 
 Grouping elements are used primarily for semantic purposes and do not affect the outline.
 
-## <p></p>
+## ```<p></p>```
 - defines a paragraph
 - overused, should be reserved for a portion of a document that contains a single thought or idea
 
-## <hr />
+## ```<hr />```
 - renders a horizontal line or, a thematic break
 - usually placed between paragraphs when there is a change of topic
 
-## <pre></pre>
+## ```<pre></pre>```
 - content placed inside ```pre``` elements will be rendered just like it is entered, including white space
 - use it to include content that is already formatted (e.g. code elements, poetry)
 
-## <main></main>
+## ```<main></main>```
 - used to indicate that its contents present the primary purpose or topic of the document
 - cannot be inside an article, aaside, footer, header, or nav elements (due to it representing the main theme or the core of the document)
 - limited to one ```main``` element per document
