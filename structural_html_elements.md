@@ -31,4 +31,51 @@
 An example of using symantic elements:
 
     <body>
-    
+        <header>
+            <title>
+                title
+            </title>
+            <nav>
+                nav element
+                nav element
+                nav element
+            </nav>
+        </header>
+        <section>
+            <section>
+                <section>
+                    section content
+                </section>
+                <section>
+                    <article>
+                        article content
+                    </article>
+                    <article>
+                        article content
+                    </article>
+                    <article>
+                        article content
+                    </article>
+                </section>
+            </section>
+            <aside>
+                <section>
+                    section content
+                </section>
+                <section>
+                    <article>
+                        article contentf
+                    </article>
+                    <article>
+                        article content
+                    </article>
+                </section>
+            </aside>
+        </section>
+        <footer>
+            <address>
+                address content
+            </address>
+        </footer>
+    </body>    
+
