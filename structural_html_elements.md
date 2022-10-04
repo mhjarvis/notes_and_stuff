@@ -93,7 +93,7 @@ Sectioning roots are HTML elements which have their own outline that does not co
         <p>This is a quotation</p>
     </blockquote>
 
-## <details></details>
+## <pre><details></details></pre>
 - allows you to create collapsible sections of content
 - can include ```summary``` element which contains content that is displayed when collapsed
 - without a ```summary``` will display 'Details'
