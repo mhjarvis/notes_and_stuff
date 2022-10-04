@@ -139,6 +139,7 @@ Grouping elements are used primarily for semantic purposes and do not affect the
 - limited to one ```main``` element per document
 - content should be unique and not shared by other documents
 - should not have an article, aside, or nav element inside, usually
-- 
 
-##
+## ```<div></div>```
+- used for all other grouping reasons
+- used to apply styles to all fo its child elements
