@@ -116,3 +116,25 @@ Sectioning roots are HTML elements which have their own outline that does not co
         <img src="HTML5Badge.png" alt="HTML5" />
         <figcaption>Official HTML5 Logo</figcaption>
     </figure>
+
+<h1 align=center>Grouping Elements</h1>
+
+Grouping elements are used primarily for semantic purposes and do not affect the outline.
+
+## <p></p>
+- defines a paragraph
+- overused, should be reserved for a portion of a document that contains a single thought or idea
+
+## <hr />
+- renders a horizontal line or, a thematic break
+- usually placed between paragraphs when there is a change of topic
+
+## <pre></pre>
+- content placed inside ```pre``` elements will be rendered just like it is entered, including white space
+- use it to include content that is already formatted (e.g. code elements, poetry)
+
+## <main></main>
+- used to indicate that its contents present the primary purpose or topic of the document
+- cannot be inside an article, aaside, footer, header, or nav elements (due to it representing the main theme or the core of the document)
+
+##
