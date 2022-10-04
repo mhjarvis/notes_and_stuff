@@ -136,5 +136,9 @@ Grouping elements are used primarily for semantic purposes and do not affect the
 ## <main></main>
 - used to indicate that its contents present the primary purpose or topic of the document
 - cannot be inside an article, aaside, footer, header, or nav elements (due to it representing the main theme or the core of the document)
+- limited to one ```main``` element per document
+- content should be unique and not shared by other documents
+- should not have an article, aside, or nav element inside, usually
+- 
 
 ##
