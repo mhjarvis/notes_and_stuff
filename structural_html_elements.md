@@ -11,3 +11,12 @@
 - used anywhere you would use a section element, if the content is independent and reusable
 - an article element can include other article elements, as would be the case with a blog post including comments.
 
+## ```<aside></aside>```
+- used to group content that does not belong in the normal flow of your document
+- examples: reference information, author information, advertising space, calendar of events, 'a side bar'
+
+## ```<nav></nav>```
+- used to group a set of links (e.g. menu)
+- if the content is primarily links, put it in a nav element
+
+## ```<address></address>```
