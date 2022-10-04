@@ -26,3 +26,9 @@
 ###  ```<header></header> && <footer></footer>```
 - header and footer should be included in their respective positions
 
+<h1 align=center>Planning a Page Layout</h1>
+
+An example of using symantic elements:
+
+    <body>
+    
