@@ -7,5 +7,8 @@
 - sections should flow linearly
 
 ## Article
-Articles are used to group content that can stand on its own, such as blog posts. Article elements can be used anywhere you would use a section element, if the content is independent and reusable. An article, especially a larger one, will often use the section element to organize the article topically as I described previously. Also, an article element can include other article elements, as would be the case with a blog post including comments.
+- used to group content that can stand on its own, such as blog posts
+- used anywhere you would use a section element, if the content is independent and reusable
+- an article element can include other article elements, as would be the case with a blog post including comments.
+
 
