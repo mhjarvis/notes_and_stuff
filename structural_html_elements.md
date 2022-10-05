@@ -145,3 +145,32 @@ Grouping elements are used primarily for semantic purposes and do not affect the
 - used to apply styles to all fo its child elements
 
 <h1 align=center>Listing Elements</h1>
+
+Listing elements comprise those used for listing contents, such as bulleted lists. These are not necessarily just single items. Any time you have a list of things, even if the "things" are large blocks of content, you should consider creating them inside one of these list elements.
+
+## ```<li></li> && <ol></ol>```
+- the type of list used should be picked based on semantics
+- ordered list includes the ```start``` attribute which lets you pick the number to start with
+- the ```reversed keyward reverses the order of numbers
+
+The ```type``` attribute specifies what type of numbering to use:
+    1           // use numbers (default)
+    A           // use uppercase letters (e.g. A, B, C, D)
+    a           // use lowercase letters
+    I           // use Roman numerals with uppercase letters (e.g. I, II, III, IV)
+    i           // use lowercase roman numerals
+
+- letters and roman numerals do not support negative numbers and will convert to negative integers
+
+## ```<dl></dl>``` (discription list)
+- used to define a list of terms (one-to-one mapping)
+- implemented using name/value pairs - ```dt></dt>``` for term elements and ```<dd></dd>``` for description elements
+- can also be use dto list groups of things with a group header
+
+    <dl>
+        <dt>Term1</dt>
+        <dd>Definition</dd>
+        <dt>Term2</dt>
+        <dd>Definition</dd>
+    </dl>
+
