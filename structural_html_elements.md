@@ -1,3 +1,5 @@
+# STRUCTURAL HTML ELEMENTS
+
 <h1 align=center>Sectioning Content</h1>
 
 ## ```<section></section>```
@@ -181,3 +183,7 @@ The ```type``` attribute specifies what type of numbering to use:
     <iframe src="http://www.apress.com" width="100%" height="400">
         <p>Your browser does not support iframes</p>    
     </iframe>
+
+# PHRASING HTML ELEMENTS
+
+<h1 align=center>Highlighting Text</h1>
