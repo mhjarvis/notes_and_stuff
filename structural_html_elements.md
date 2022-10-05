@@ -190,3 +190,10 @@ The ```type``` attribute specifies what type of numbering to use:
 
 ## Importance (<strong>)
 - used to indicate the text has a higher importance than the surrounding text
+- can also be nested to indicate extr importance
+
+    <strong>                  
+        <strong>Warning!</strong> Be sure to <strong>extinguish</strong> all fires!
+    </strong>  
+
+## Emphasis (<em>)
