@@ -201,3 +201,5 @@ The ```type``` attribute specifies what type of numbering to use:
 - use when introducing new terms or concepts
 
 ## Relevance (<mark>)
+- used to indicate text that is particularly relevant in the current context
+
