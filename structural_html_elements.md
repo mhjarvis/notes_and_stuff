@@ -187,3 +187,6 @@ The ```type``` attribute specifies what type of numbering to use:
 # PHRASING HTML ELEMENTS
 
 <h1 align=center>Highlighting Text</h1>
+
+## Importance (<strong>)
+- used to indicate the text has a higher importance than the surrounding text
