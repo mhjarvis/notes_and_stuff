@@ -197,3 +197,7 @@ The ```type``` attribute specifies what type of numbering to use:
     </strong>  
 
 ## Emphasis (<em>)
+- should be used on text with an emphasis
+- use when introducing new terms or concepts
+
+## Relevance (<mark>)
