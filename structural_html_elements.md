@@ -174,3 +174,10 @@ The ```type``` attribute specifies what type of numbering to use:
         <dd>Definition</dd>
     </dl>
 
+<h1 align=center>Inline Frames</h1>
+
+- the ```iframe``` lement is used to embed another web page within the current document
+
+    <iframe src="http://www.apress.com" width="100%" height="400">
+        <p>Your browser does not support iframes</p>    
+    </iframe>
