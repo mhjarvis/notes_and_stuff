@@ -114,3 +114,16 @@ Deteremine org-wide defaults by doing this:
 
 ### Hands on - know how to do the following:
 * Set Org-wide sharing defaults
+
+# **[Create a Role Hierarchy](https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_roles)**
+
+## **Create and Edit Roles**
+Role Hierarchys work by providing anyone higher in the hierarchy access to those under them. The CEO, executives, admins are usually found towards the top of this hierarchy.
+
+```Sharing Settings``` is where you control sharing access.
+
+## **Define a Role Hierarchy**
+```Roles``` is where you can set roles. 
+
+### Hands on - know how to do the following:
+* Add roles to the role hierarchy
