@@ -12,7 +12,10 @@
 ### Hands on - know how to do the following:
 * Create a custom picklist
 * Restrict a picklist
+* Set a dependent picklist
 
 # **[Manage Your Picklist Values](https://trailhead.salesforce.com/content/learn/modules/picklist_admin/picklist_admin_manage?trail_id=force_com_admin_intermediate&trailmix_creator_id=strailhead&trailmix_slug=build-your-admin-career-on-salesforce)**
 
+## **General Information**
+Indexed fields support quick retrieval. 
 
