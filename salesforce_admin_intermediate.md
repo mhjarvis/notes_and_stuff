@@ -127,3 +127,13 @@ Role Hierarchys work by providing anyone higher in the hierarchy access to those
 
 ### Hands on - know how to do the following:
 * Add roles to the role hierarchy
+
+
+# **[Define Sharing Rules](https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_sharing_rules)**
+
+## **Extend Access with Sharing Rules**
+Sharing rules can never be stricter than your org-wide default settings.
+
+### Hands on - know how to do the following:
+* Define a Public Group
+* Define a Sharing Rule
