@@ -8,6 +8,24 @@ The goal is to limit what people can see, to what they should see. There are var
 Through the four different levels, you can customize how you achieve this.
 
 ### List the four levels at which you can control data access
+Data access can be controle four ways.
 
+#### Organization
+For your organization you control users, password policies, login limits (hours, locations).
+
+#### Objects
+Objects can be limited to who can create them, view them, edit them, delete them.
+
+Permission Sets can be used to add access (never remove access).
+
+#### Fields
+Fields can be restricted even if the user has access to the object they are on.
+
+#### Records
+Individual records can also be restricted for certain users.
+
+Record-level access is controled through four ways:
+1. Organization-wide defaults - set default level of access users have to each others records, then expand from there.
+2. Role hierarchies - 
 
 ### Describe a typical scenario for limiting data access at each of the four levels.
