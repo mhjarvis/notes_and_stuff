@@ -37,4 +37,50 @@ Do it regularily to detect abuse. ***Record modification fields*** show the name
 
 # **[Control Access to the Org](https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_org?trail_id=force_com_admin_intermediate&trailmix_creator_id=strailhead&trailmix_slug=build-your-admin-career-on-salesforce)**
 
-## 
+### Hands on - know how to do the following:
+
+* Create / Deactivate a User
+* Set a Password Policy
+* Specify Trusted IP Ranges
+* Restrict Login Access by IP Address Using Profiles
+* Restrict Login Access by Time
+
+# **[Control Access to Objects](https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects?trail_id=force_com_admin_intermediate&trailmix_creator_id=strailhead&trailmix_slug=build-your-admin-career-on-salesforce)**
+
+## **Manage Object Permissions**
+Setting permisions on an object is simplest way to control data access. Use profiles or permission sets. 
+
+## **Use Profiles to Restrict Access**
+Each user has a profile. Profiles consist of settings and permissions. These control what a user can see. These can be asigned to many users.
+
+## **Standard Profiles**
+Examples are:
+* Standard User
+* Contract Manager
+* System Administrator
+
+Each profile has default settings/permissions. System Admin has two important permissions: *View All Data* and *Modify All Data*. These overide all other sharing settings. Permissions cannot be edited on standard profiles (you will need to clone them).
+
+Profile functionality is dependent on user license type.
+
+### Hands on - know how to do the following:
+* Manage profiles
+* Create a profile
+* Assign a profile
+* Use Permission Sets to grant access
+* Manage Permission Sets
+* Create a Permission Set
+
+# **[Control Access to Fields](https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_fields?trail_id=force_com_admin_intermediate&trailmix_creator_id=strailhead&trailmix_slug=build-your-admin-career-on-salesforce)**
+
+## **Modify Field-Level Security**
+This should come after restricting object-level access. Use this to restrict what they can see on objects. It controls if someone can view, edit, and delete the fields value.
+
+Use this over page layouts (which only hide fields). Field-level security controls the visibility of fields in any part of the app, including related lists, list views, reports, and search results.
+
+### Hands on - know how to do the following:
+* Restrict Field Access with a Profile
+* Add Field Access with a Permission Set
+
+# **[Control Access to Records](https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_records?trail_id=force_com_admin_intermediate&trailmix_creator_id=strailhead&trailmix_slug=build-your-admin-career-on-salesforce)**
+
