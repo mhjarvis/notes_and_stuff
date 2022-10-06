@@ -34,3 +34,7 @@ Record-level access is controled four ways:
 
 ## **Audit System Use**
 Do it regularily to detect abuse. ***Record modification fields*** show the name of the user that changed the record. ***Login History*** shows successful/failed logins. ***Field History Tracking*** track changes of individual fields. ***Setup Audit Trail*** logs when modifications are made to your organization's configuration.
+
+# **[Control Access to the Org](https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_org?trail_id=force_com_admin_intermediate&trailmix_creator_id=strailhead&trailmix_slug=build-your-admin-career-on-salesforce)**
+
+## 
