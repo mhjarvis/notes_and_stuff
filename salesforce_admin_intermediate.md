@@ -84,3 +84,33 @@ Use this over page layouts (which only hide fields). Field-level security contro
 
 # **[Control Access to Records](https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_records?trail_id=force_com_admin_intermediate&trailmix_creator_id=strailhead&trailmix_slug=build-your-admin-career-on-salesforce)**
 
+## **General Information**
+You can limit the individual records a user can see. Ask yourself - should they see all records? 
+
+The permissions on a record are based on a combination of object-level, field-level, and record-level permissions. The most restrictive settings will win.
+
+## **Four ways to control access to records**
+These are Org-wide defaults, Role hierarchies, Sharing rules, Manual sharing. 
+
+![](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/data_security/data_security_records/images/cac30d566a68bfc4a34f3b9607be2a66_record-access-triangle.png)
+
+Access is determined by these principles:
+* a profile determines their base access
+* permissions sets work alongside profile
+* role hierarchy can open up some access
+* sharing rules expand access to additional groups of users
+* record owners can share individual records
+
+Deteremine org-wide defaults by doing this:
+
+![](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/data_security/data_security_records/images/5c174b9dc0fa480ea60c2b158b6302bf_adg-security-org-wide-default-flow-chart.jpg)
+
+## **Sharing Model Settings**
+
+1. Private - only the record owner and users above him in the role hierarchy can view, edit, and report on those records
+2. Public Read Only - all users and view/report; only owner can edit
+3. Public Read/Write - all users can read/report/edit
+4. Controlled by Parent - Depends on what they can do with parent object
+
+### Hands on - know how to do the following:
+* Set Org-wide sharing defaults
