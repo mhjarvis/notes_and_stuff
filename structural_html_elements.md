@@ -206,4 +206,11 @@ The ```type``` attribute specifies what type of numbering to use:
 - used to highlight text that is being quoted from another source
 
 ## Alternate Voice ```<i></i>```
-- used when the text needs to be styled differently from the surrounding tet
+- used when the text needs to be styled differently from the surrounding text but you don't need to imply any greater importance or emphasis
+- examples include: when stating a thought, using a touch via diff language, or when a technical term is used
+
+## Small ```<small></small>```
+- use for text that provide dtails that are typically outside of the primary content
+- use for copyright information, disclaimers, legal information, disclousures, licensing details, attributing material
+
+stuff
