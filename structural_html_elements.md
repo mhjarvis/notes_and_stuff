@@ -188,7 +188,7 @@ The ```type``` attribute specifies what type of numbering to use:
 
 <h1 align=center>Highlighting Text</h1>
 
-## Importance (<strong>)
+## Importance ```<strong></strong>```
 - used to indicate the text has a higher importance than the surrounding text
 - can also be nested to indicate extr importance
 
@@ -196,10 +196,14 @@ The ```type``` attribute specifies what type of numbering to use:
         <strong>Warning!</strong> Be sure to <strong>extinguish</strong> all fires!
     </strong>  
 
-## Emphasis (<em>)
+## Emphasis ```<em></em>```
 - should be used on text with an emphasis
 - use when introducing new terms or concepts
 
-## Relevance (<mark>)
-- used to indicate text that is particularly relevant in the current context
 
+## Relevance ```<mark></mark>```
+- used to indicate text that is particularly relevant in the current context
+- used to highlight text that is being quoted from another source
+
+## Alternate Voice ```<i></i>```
+- used when the text needs to be styled differently from the surrounding tet
